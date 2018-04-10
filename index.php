@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>
-    		Quiz ENEM 2018
-        </title>
-    	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-        <script type="text/javascript" src="js/jquery.validate.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Quiz ENEM 2018
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+</head>
 
-    <body>
-        <form>
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="navbar-brand w-100 order-1 order-md-0 dual-collapse2">
+            <h1 class="navbar-brand">
+                <a class="nav-link" href="#">ENEM Quiz 2018</a>
+            </h1>
+        </div>
+
+        <nav class="collapse navbar-collapse mr-sm-2" >
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a id="author" class="nav-link" href="#">Autor</a>
+              </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="jumbotron" id="jumbotron">
+        <h1>Preparado para o ENEM 2018?</h1>
+        <p>Aproveite este quiz para exercitar o que você já aprendeu até agora, boa sorte!</p>
+    </div>
+
+    <div class="container" id="wrap_content">
+        <form id="quiz" action="correction.php" method="post">
             <ol>
-                <li>
-                    <div class="form-group">
-                        <label>OUHjsdhfbv</label>
-                        <div>
-                            <input type="radio" name="question_1_answers" id="q1_a" value="a"/>
-                            <label for="q1_a">A) </label>
-                        </div>
-
-                        <div>
-                            <input type="radio" name="question_1_answers" id="q1_b" value="b"/>
-                            <label for="q1_b">B) </label>
-                        </div>
-
-                        <div>
-                            <input type="radio" name="question_1_answers" id="q1_c" value="c"/>
-                            <label for="q1_c">C) </label>
-                        </div>
-
-                        <div>
-                            <input type="radio" name="question_1_answers" id="q1_d" value="d"/>
-                            <label for="q1_d">D) </label>
-                        </div>
-
-                        <div>
-                            <input type="radio" name="question_1_answers" id="q1_e" value="e"/>
-                            <label for="q1_e">E) </label>
-                        </div>
-                    </div>
-                </li>
+                <?php
+                include "questions_mng.php";
+                get_questions();
+                ?>
             </ol>
+            <input type="submit" value="Enviar Quiz"/>
         </form>
-    </body>
+    </div>
+</body>
 </html>

@@ -1,0 +1,27 @@
+#wrap_content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#author:hover {
+    color: #6BDCFF;
+}
+
+#jumbotron {
+    border-radius: 6px;
+    padding: 48px 60px 48px 60px;
+    background-color: #eee;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+}
