@@ -1,7 +1,9 @@
 <?php
+
     function get_questions() {
-        $i = 0;
-        $questions = array('q1', 'q2', 'q3', 'q4','q5','q6','q7','q8','q9', 'q10');
+        $content = file_get_contents('model/questions.json');
+        $json = json_decode($content, true);
+        $questions = array('q1');
         foreach($questions as $key => $value) {
             print "<li>
                 <div class=\"form-group\">
@@ -33,5 +35,6 @@
                 </div>
             </li>";
         }
+        echo '<pre>' . print_r($json, true) . '</pre>';
     }
 ?>

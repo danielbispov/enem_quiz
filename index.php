@@ -14,6 +14,11 @@
 </head>
 
 <body>
+    <?php
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
+        error_reporting(E_ALL);
+    ?>
     <div class="container">
         <header class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="navbar-brand w-100 order-1 order-md-0 dual-collapse2">
@@ -35,7 +40,7 @@
 
         <div class="container" id="wrap_content">
             <p>Cada questão vale 1 ponto, ao final do quiz você terá a sua pontuação.</p>
-            <form id="quiz" action="correction.php" method="post">
+            <form id="quiz" action="" method="post">
                 <ol>
                     <?php
                     include "questions_mng.php";
