@@ -8,10 +8,10 @@
     </title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/quiz.css">
-    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.js"></script>
-    <script type="text/javascript">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
     $(document).ready(function () {
         $('#quiz').validate({
             errorClass: 'error help-inline alert alert-warning container',
@@ -63,7 +63,6 @@
                 question_9_answer: "Por favor, assinale uma das alternativas."
             }
         });
-
     });
     </script>
 </head>
