@@ -11,6 +11,61 @@
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#quiz').validate({
+            errorClass: 'error help-inline alert alert-warning container',
+            rules: {
+                question_0_answer: {
+                    required: true
+                },
+                question_1_answer: {
+                    required: true
+                },
+                question_2_answer: {
+                    required: true
+                },
+                question_3_answer: {
+                    required: true
+                },
+                question_4_answer: {
+                    required: true
+                },
+                question_5_answer: {
+                    required: true
+                },
+                question_6_answer: {
+                    required: true
+                },
+                question_7_answer: {
+                    required: true
+                },
+                question_8_answer: {
+                    required: true
+                },
+                question_9_answer: {
+                    required: true
+                }
+            },
+            errorPlacement: function(error, element) {
+                error.insertBefore(element.parent().parent(element));
+            },
+            messages: {
+                question_0_answer: "Por favor, assinale uma das alternativas.",
+                question_1_answer: "Por favor, assinale uma das alternativas.",
+                question_2_answer: "Por favor, assinale uma das alternativas.",
+                question_3_answer: "Por favor, assinale uma das alternativas.",
+                question_4_answer: "Por favor, assinale uma das alternativas.",
+                question_5_answer: "Por favor, assinale uma das alternativas.",
+                question_6_answer: "Por favor, assinale uma das alternativas.",
+                question_7_answer: "Por favor, assinale uma das alternativas.",
+                question_8_answer: "Por favor, assinale uma das alternativas.",
+                question_9_answer: "Por favor, assinale uma das alternativas."
+            }
+        });
+
+    });
+    </script>
 </head>
 
 <body>
@@ -40,7 +95,7 @@
 
         <div class="container" id="wrap_content">
             <p>Cada questão vale 1 ponto, ao final do quiz você terá a sua pontuação.</p>
-            <form id="quiz" action="" method="post">
+            <form id="quiz" action="results.php" method="post">
                 <ol>
                     <?php
                     include "questions_mng.php";

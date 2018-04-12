@@ -23,6 +23,10 @@
     margin: 0 auto;
 }
 
+.error::after {
+    content: "\A";
+}
+
 a {
     text-decoration: none;
     color: inherit;
