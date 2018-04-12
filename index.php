@@ -20,14 +20,14 @@
         error_reporting(E_ALL);
     ?>
     <div class="container">
-        <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <header id="header" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="navbar-brand w-100 order-1 order-md-0 dual-collapse2">
                 <h1 class="navbar-brand">
                     <a class="nav-link" href="#">ENEM Quiz 2018</a>
                 </h1>
             </div>
             <ul class="justify-content-end">
-                <li class="nav-item">
+                <li id="author_item" class="nav-item">
                     <a id="author" class="nav-link" href="#">Autor</a>
                 </li>
             </ul>
@@ -44,7 +44,8 @@
                 <ol>
                     <?php
                     include "questions_mng.php";
-                    get_questions();
+                    $manager = new QuestionsManager;
+                    $manager->get_questions();
                     ?>
                 </ol>
                 <input type="submit" value="Enviar Quiz"/>

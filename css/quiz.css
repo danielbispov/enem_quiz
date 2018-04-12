@@ -1,16 +1,26 @@
-#wrap_content {
-    width: 100%;
-    margin: 0 auto;
+#author:hover {
+    text-decoration: none;
+    color: #6BDCFF;
 }
 
-#author:hover {
-    color: #6BDCFF;
+#author_item {
+    list-style: none;
+}
+
+#header {
+    border-bottom: 2px solid gray;
+    margin-bottom: 2em;
 }
 
 #jumbotron {
     border-radius: 6px;
     padding: 48px 60px 48px 60px;
     background-color: #eee;
+}
+
+#wrap_content {
+    width: 100%;
+    margin: 0 auto;
 }
 
 a {
