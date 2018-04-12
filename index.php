@@ -51,7 +51,7 @@
                 error.insertBefore(element.parent().parent(element));
             },
             messages: {
-                question_0_answer: "Por favor, assinale uma das alternativas.",
+                question_0_answer: " Por favor, assinale uma das alternativas.",
                 question_1_answer: "Por favor, assinale uma das alternativas.",
                 question_2_answer: "Por favor, assinale uma das alternativas.",
                 question_3_answer: "Por favor, assinale uma das alternativas.",
