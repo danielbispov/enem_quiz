@@ -165,6 +165,18 @@
 				"e": ["dos graus de intimidade entre os amigos", false]
 			},
 			"source": "Enem 2022"
+		},
+
+		{
+			"text": "Na sociologia e na literatura, o brasileiro foi por vezes tratado como cordial e hospitaleiro, mas não é isso o que acontece nas redes sociais: a democracia racial apregoada por Gilberto Freyre passa ao largo do que acontece diariamente nas comunidades virtuais do país. Levantamento inédito realizado pelo projeto Comunica que Muda […] mostra em números a intolerância do internauta tupiniquim. Entre abril e junho, um algoritmo vasculhou plataformas […] atrás de mensagens e textos sobre temas sensíveis, como racismo, posicionamento político e homofobia. Foram identificadas 393 284 menções, sendo 84% delas com abordagem negativa, de exposição do preconceito e da discriminação.\n Ao abordar a postura do internauta brasileiro mapeada por meio de uma pesquisa em plataformas virtuais, o texto",
+			"alternatives": {
+				"a": ["minimiza o alcance da comunicação digital.", false],
+				"b": ["refuta ideias preconcebidas sobre o brasileiro.", false],
+				"c": ["relativiza responsabilidades sobre a noção de respeito.", true],
+				"d": ["exemplifica conceitos contidos na literatura e na sociologia.", true],
+				"e": ["expõe a ineficácia dos estudos para alterar tal comportamento.", false]
+			},
+			"source": "Enem 2028"
 		}
 	]
 }

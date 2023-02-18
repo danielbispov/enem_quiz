@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        Quiz ENEM 2018
+        Quiz ENEM 2023
     </title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/quiz.css">
@@ -51,7 +51,7 @@
                 error.insertBefore(element.parent().parent(element));
             },
             messages: {
-                question_0_answer: " Por favor, assinale uma das alternativas.",
+                question_0_answer: "Por favor, assinale uma das alternativas.",
                 question_1_answer: "Por favor, assinale uma das alternativas.",
                 question_2_answer: "Por favor, assinale uma das alternativas.",
                 question_3_answer: "Por favor, assinale uma das alternativas.",
@@ -77,7 +77,7 @@
         <header id="header" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="navbar-brand w-100 order-1 order-md-0 dual-collapse2">
                 <h1 class="navbar-brand">
-                    <a class="nav-link" href="#">ENEM Quiz 2018</a>
+                    <a class="nav-link" href="#">ENEM Quiz 2023</a>
                 </h1>
             </div>
             <ul class="justify-content-end">
@@ -88,7 +88,7 @@
         </header>
 
         <div class="jumbotron" id="jumbotron">
-            <h1>Preparado para o ENEM 2018?</h1>
+            <h1>Preparado para o ENEM 2023?</h1>
             <p>Aproveite este quiz para exercitar o que você já aprendeu até agora, boa sorte!</p>
         </div>
 
