@@ -23,7 +23,7 @@
         <header id="header" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="navbar-brand w-100 order-1 order-md-0 dual-collapse2">
                 <h1 class="navbar-brand">
-                    <a class="nav-link" href="#">ENEM Quiz 2018</a>
+                    <a class="nav-link" href="#">ENEM Quiz 2023</a>
                 </h1>
             </div>
             <ul class="justify-content-end">
